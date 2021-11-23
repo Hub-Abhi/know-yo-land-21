@@ -1,0 +1,162 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/* style for split class */
+.split {
+	display: flex;
+	margin-top: -3.15%;
+	margin-bottom: -2%;
+	/* height: 100vh; */
+}
+.split-left {
+	width: 50%;
+	background-color: orangered;
+	font-weight: 400;
+}
+.split .split-left img {
+	height: 100vh;
+	width: 100%;
+}
+.split-right {
+	width: 50%;
+	background-color: #fcfcfc;
+}
+
+.form-items {
+	background: aliceblue;
+	border-radius: 1%;
+	padding: 10%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	font-family: "Roboto", sans-serif;
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+}
+
+form .container {
+	margin-bottom: 10%;
+
+	font-weight: 400;
+}
+form .container h1 {
+	font-size: 120%;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 5%;
+}
+form .register {
+	margin-top: 15%;
+}
+form .dashed {
+	border-top: 1px solid orangered;
+	width: 100%;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+form input[type="text"]:hover,
+form input[type="password"]:hover,
+form input[type="email"]:hover,
+form input[type="tel"]:hover,
+form select:hover {
+	border: 1px solid orangered;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+	width: 100%;
+	padding: 1% 2%;
+	margin: 2% 0%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	float: none;
+	border-radius: 1% !important;
+}
+
+/*style for all buttons */
+form .container button {
+	background-color: orangered;
+	color: white;
+	padding: 8px 8px;
+	margin: 10px 6px 10px 1px;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+	border-radius: 1%;
+}
+
+/* hover effect for buttons */
+form .container button:hover {
+	background-color: rgb(26, 107, 228);
+}
+
+/*For trials*/
+form .flex-container {
+	display: flex;
+	justify-content: center;
+}
+form .register h4 {
+	text-align: center;
+}
+form .flex-container span {
+	margin: 1% 2% 2% 2%;
+}
+form .flex-container a {
+	color: #0d6efd;
+	font-size: 100%;
+	transition: all 0.4s ease;
+}
+form .flex-container a:hover {
+	color: orangered;
+	font-size: 90%;
+	transition: all 0.4s ease;
+}
+/* The "Forgot password" text */
+form .container .psw {
+	float: right;
+	padding-top: 1px;
+	padding-bottom: 16px;
+	width: 100%;
+	border-top: 8px;
+	margin-top: 1px;
+	color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+	form .container button {
+		width: 40%;
+	}
+
+	.form-items {
+		height: max-content;
+		max-height: max-content;
+	}
+
+	form .container,
+	form .register {
+		font-size: 90%;
+	}
+	form .flex-container {
+		display: list-item;
+		/* display: block-ruby; */
+		list-style-type: none;
+		padding-top: 5%;
+		/* margin-left:-1%; */
+	}
+	form .flex-container a:hover {
+		color: orangered;
+		text-decoration: none;
+		margin-left: 5%;
+		transition: 100ms ease-in;
+	}
+
+	.split .split-left {
+		display: none;
+	}
+	.split .split-right {
+		width: 100%;
+	}
+}

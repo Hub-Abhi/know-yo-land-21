@@ -1,0 +1,13 @@
+.body-lcp {
+	height: 80vh;
+	width: 40vw;
+	background-color: aliceblue;
+	border-radius: 1%;
+}
+.form-items-lcp {
+	padding: 10%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	font-family: "Roboto", sans-serif;
+}

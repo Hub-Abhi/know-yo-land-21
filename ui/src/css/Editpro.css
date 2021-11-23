@@ -1,0 +1,489 @@
+@import "reset.css";
+@import "footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 10%;
+  z-index: 100;
+  padding: 2px 5px 5px 5px;
+  border-right: 1px solid rgb(128, 0, 255);
+  border-radius: 5px;
+  height: calc(85vh);
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-left: 20px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  flex-wrap: unset;
+}
+
+.left-sidebar {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(164, 196, 248);
+}
+
+header .topHeader {
+  display: inline;
+  background-color: #002244;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.topHeader .leftIcon {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  float: left;
+}
+.topHeader p {
+  display: inline;
+  margin-top: 5px;
+  /* justify-content: space-between; */
+}
+
+.profileP {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 20%;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-bottom: 1px;
+  font-weight: bolder;
+  color: #002244;
+}
+
+.left-sidebar li a {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  transition: 0.25s;
+  font-size: 20px;
+}
+
+.left-sidebar li a:hover {
+  opacity: 1;
+  border-right: 3px solid orange;
+  border-radius: 3px;
+  margin-left: 20px;
+
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.Logout {
+  display: inline-block;
+  margin-left: 80%;
+  margin-bottom: 1px;
+  color: aliceblue;
+}
+.Logout a {
+  color: aliceblue;
+}
+.Logout a:hover {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
+  color: yellow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.fas {
+  margin-left: 80px;
+  font-size: 25px;
+  color: aliceblue;
+  float: left;
+}
+.far {
+  display: inline-block;
+  margin-right: 1px;
+  font-size: 28px;
+  margin-top: 15%;
+  color: aliceblue;
+  margin-left: 10px;
+}
+hr {
+  background-color: aliceblue;
+}
+.far :hover {
+  font-weight: bolder;
+  cursor: pointer;
+  margin-left: 1px;
+  transition: 3s;
+}
+form {
+  margin-left: 19%;
+  width: 132%;
+  margin-top: 7%;
+}
+.fr2 {
+  width: 100%;
+  margin-left: 54%;
+}
+form h4 {
+  color: aliceblue;
+}
+form .form-head {
+  text-align: center;
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: -15%;
+}
+form .vert-line {
+  border-top: 1px solid orangered;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 0%;
+  width: 99%;
+}
+
+.form-group input:hover {
+  border: 1px solid orangered;
+}
+.form-control {
+  display: inline;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.formg {
+  width: 100%;
+}
+.btn-signup {
+  background-color: orangered;
+  /* margin-top: 50%; */
+  box-shadow: 0.5px 0.5px 3px 0.5px grey;
+
+  margin-top: 0px;
+  margin-left: 300%;
+  margin-right: 0%;
+  width: 130px;
+  /* margin-bottom: 200px; */
+}
+.btn-signup2 {
+  background-color: orangered;
+  /* margin-top: 50%; */
+  box-shadow: 0.5px 0.5px 3px 0.5px grey;
+  margin-top: 1%;
+  margin-left: 43%;
+  margin-right: 40%;
+  width: 130px;
+}
+.btn-signup2:hover {
+  background-color: rgb(26, 107, 228);
+}
+
+.btn-signup:hover {
+  background-color: rgb(26, 107, 228);
+}
+
+.navbar {
+  z-index: 400;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+.navbar-brand {
+  font-size: 110%;
+}
+.active-link {
+  margin-left: 70%;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+main p {
+  color: aliceblue;
+}
+.nav-item a:hover {
+  color: rgb(255, 238, 0) !important;
+  transition: 2ms;
+  font-family: "Blinker", sans-serif;
+}
+header {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  background: url("header.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 1% !important;
+  border-bottom: 1px solid aliceblue;
+  width: 224.5%;
+}
+.margin {
+  margin-bottom: 5%;
+}
+
+input {
+  box-shadow: 0.5px 0.5px 4px 0.5px grey;
+}
+.fa-copyright {
+  display: inline;
+}
+.copywrite {
+  display: block;
+  margin-top: 70%;
+  margin-left: 10px;
+  color: #002244;
+  text-align: center;
+}
+.vertline {
+  margin-right: 10px;
+  margin-left: 1px;
+  border: 1px solid #002244;
+}
+body {
+  background-color: #002244;
+  overflow: hidden;
+}
+
+.button {
+  margin-top: 48%;
+  margin-left: 50%;
+  border-radius: 20px;
+  text-align: center;
+}
+main {
+  max-width: 800px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-left: 50%; */
+}
+.form-head h4 {
+  margin-left: 13%;
+}
+.Phone {
+  padding-left: 17px;
+  display: block;
+  width: 325%;
+  margin-left: 6%;
+}
+form {
+  width: 600px;
+}
+.consumer {
+  margin-left: 51%;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .sidebar {
+    /* width: 20%; */
+    /* margin-left: 20%; */
+    display: flex;
+    width: 28%;
+    flex-direction: row;
+    margin-bottom: 20%;
+    top: 13%;
+    left: -3%;
+    font-size: small;
+  }
+  .sidebar .profileP {
+    font-size: 90%;
+    margin-left: 10%;
+  }
+
+  .sidebar ul li a {
+    font-size: 90%;
+    margin-left: -7%;
+    margin-bottom: 80%;
+  }
+  .form {
+    margin-bottom: 20%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 40%;
+    /* padding-right: 20px; */
+    width: 150%;
+    font-family: "Roboto", sans-serif;
+
+    color: rgb(202, 211, 219);
+    /* margin-bottom: 80px; */
+    float: unset;
+    margin-left: -68%;
+    display: block;
+    flex-direction: column;
+  }
+
+  .form-control {
+    display: block;
+    flex-direction: column;
+  }
+
+  .city {
+    margin-left: 5%;
+    width: 91%;
+  }
+  .state {
+    margin-left: 6%;
+    width: 90%;
+  }
+  .zip {
+    margin-left: 9%;
+    width: 93%;
+  }
+  .Phone {
+    width: 124%;
+  }
+  .button {
+    margin-top: -3%;
+    margin-left: 73%;
+  }
+  .form-head {
+    font-size: 1em;
+  }
+  input {
+    display: block;
+    /* width: 60%; */
+  }
+  .col-7 {
+    width: auto;
+    display: block;
+  }
+  ul .nav a {
+    margin-left: -14%;
+    width: 111%;
+    font-size: 60%;
+  }
+  header {
+    width: 100%;
+  }
+
+  .topHeader .leftIcon {
+    margin-top: 3%;
+    margin-left: -8%;
+  }
+  .Logout {
+    margin-left: 68%;
+  }
+  .btn-signup2 {
+    margin-top: 2%;
+    margin-left: 26%;
+  }
+
+  .consumer form {
+    margin-left: -61%;
+  }
+  .consumer h4 {
+    font-size: 95%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .fr2 {
+    margin-left: 61%;
+  }
+
+  .sidebar {
+    /* width: 20%; */
+    /* margin-left: 20%; */
+    display: flex;
+    width: 28%;
+    flex-direction: row;
+    margin-bottom: 20%;
+    top: 13%;
+    left: -3%;
+    font-size: small;
+  }
+  .sidebar .profileP {
+    font-size: 90%;
+    margin-left: 10%;
+  }
+
+  .sidebar ul li a {
+    font-size: 90%;
+    margin-left: -7%;
+    margin-bottom: 80%;
+  }
+  .form {
+    margin-bottom: 20%;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 40%;
+    /* padding-right: 20px; */
+    width: 120%;
+    font-family: "Roboto", sans-serif;
+
+    color: rgb(202, 211, 219);
+    /* margin-bottom: 80px; */
+    float: unset;
+    margin-left: -68%;
+    display: block;
+    flex-direction: column;
+  }
+
+  .form-control {
+    display: block;
+    flex-direction: column;
+  }
+
+  .city {
+    margin-left: 5%;
+    width: 72%;
+  }
+  .state {
+    margin-left: 6%;
+    width: 72%;
+  }
+  .zip {
+    margin-left: 9%;
+    width: 67%;
+  }
+  .Phone {
+    width: 89%;
+  }
+  .button {
+    margin-top: -3%;
+    margin-left: 42%;
+  }
+  .form-head {
+    font-size: 1em;
+  }
+  input {
+    display: block;
+    /* width: 60%; */
+  }
+  .col-7 {
+    width: auto;
+    display: block;
+  }
+  ul .nav a {
+    margin-left: -14%;
+    width: 111%;
+    font-size: 60%;
+  }
+  header {
+    width: 100%;
+  }
+
+  .topHeader .leftIcon {
+    margin-top: 3%;
+    margin-left: -20%;
+  }
+  .Logout {
+    margin-left: 52%;
+    margin-bottom: 4px;
+  }
+  .btn-signup2 {
+    margin-top: 2%;
+    margin-left: 26%;
+  }
+}

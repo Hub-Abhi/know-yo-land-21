@@ -1,0 +1,91 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap");
+
+/* Control the left side */
+.left {
+	position: absolute;
+	left: 10px;
+	width: 631.5px;
+}
+
+/* Control the right side */
+.right {
+	position: absolute;
+	right: -10px;
+	width: 631.5px;
+	float: right;
+}
+
+.row {
+	padding-top: 2%;
+}
+
+form .form-head {
+	text-align: center;
+	font-size: 130%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+form .vert-line {
+	border-top: 1px solid orangered;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+input:hover {
+	border: 1px solid orangered;
+}
+.form-control {
+	display: flex;
+}
+.form-select {
+	color: #6c757d;
+}
+.form-select::-webkit-scrollbar {
+	width: 6px;
+	scrollbar-width: thin;
+	background-color: #818181;
+}
+.btn-reset,
+.btn-signup {
+	background-color: orangered;
+	margin-top: 1%;
+}
+.btn-signup {
+	margin-left: 0%;
+	float: left;
+}
+.btn-reset {
+	float: right;
+}
+.btn-reset:hover,
+.btn-signup:hover {
+	background-color: rgb(26, 107, 228);
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+	.row {
+		height: max-content;
+		max-height: max-content;
+	}
+	.split .split-left {
+		display: none;
+	}
+	.split .split-right {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 300px) and (max-width: 355px) {
+	#butt {
+		margin-top: 20px;
+		outline: none;
+		background: none;
+		border: none;
+	}
+	html {
+		height: 100%;
+	}
+	.vert-line {
+		margin-bottom: 10px;
+	}
+}

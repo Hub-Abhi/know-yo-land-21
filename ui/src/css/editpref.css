@@ -1,0 +1,344 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+body{
+    background-color: rgb(231, 239, 252);
+}
+/* styling the vertical navbar */
+.vert-nav{
+    width: 20%;
+    background-color: rgb(4, 37, 99);
+    /* background-color: rgb(250, 123, 3); */
+    margin-left: 2%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    /* height: 90vh; */
+    color: rgb(202, 219, 247);
+    border-radius: 4px;
+    
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Mukta', sans-serif;
+    position: fixed;
+    overflow: hidden;
+}
+
+.vert-nav .icon,
+.vert-nav .nav-head{
+
+    padding-top: 7%;
+    text-align: center;
+}
+.vert-nav .nav-head{
+    margin-top: 5%;
+    font-size: 115%;
+}
+.vert-nav .nav-head i{
+    margin-right: 2%;
+}
+.vert-nav .icon img{
+    height: 4em;
+    width: 5em;
+}
+.vert-nav .nav-links{
+    margin-top: 15%;
+}
+.vert-nav .nav-links .list-items li{
+    margin-top: 15%;
+    margin-left: 12%;
+    transition: 500ms;
+}
+.vert-nav .nav-links .list-items li:hover{
+    margin-left: 18%;
+    transition: 500ms;
+    cursor: pointer;
+}
+.vert-nav .nav-links .list-items li i{
+    margin-right: 5%;
+}
+.vert-nav .nav-links .list-items li:nth-of-type(3) i{
+    margin-right: 8%;
+}
+.vert-nav .vert-line{
+    border-bottom: 1px solid rgb(202, 219, 247);
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 5%; 
+}
+.vert-nav .copywrite{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 80%;
+    color: rgba(202, 219, 247, 0.781);
+}
+
+/* styling horizontal navbar */
+.navbars,
+.hori-nav,
+.notify{
+    display: flex;
+}
+.hori-nav{
+    margin-top: 0%;
+    margin-left: 23%; 
+    margin-right: 1%;
+    padding-top: 3%;
+    padding-left: 1%;
+    width: 75%;
+    font-family: 'Mukta', sans-serif;
+    /* background-color: rgb(63, 187, 94);
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(252, 135, 40);
+    border-radius: 5px; */
+    /* background-color: rgb(4, 37, 99); */
+    height: 5vh;
+    /* color: rgb(202, 219, 247); */
+    border-bottom: 2px solid rgba(4, 37, 99, 0.541);;
+    border-radius: 2px;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(231, 239, 252);
+}
+.hori-nav .notify{
+    margin-left: 67%;
+}
+.hori-nav p{
+    color: rgba(0, 0, 0, 0.616);
+}
+.hori-nav .notify li:nth-of-type(2){
+    margin-left: 20%;
+}
+.hori-nav .notify li:nth-of-type(2) a{
+    /* color: rgb(202, 219, 247); */
+    color: black;
+    transition: 500ms;
+    font-weight: bold;
+}
+.hori-nav .notify li:nth-of-type(2) a:hover{
+    margin-left: 10%;
+    transition: 500ms;
+}
+
+/* styling  inner-html of vertical links*/
+
+.cath{
+    margin-left: 24%;
+    margin-top: 7%;
+    font-family: 'Mukta', sans-serif;
+    width: 74%;
+    
+}
+.cath h2{
+    font-size: 120%;
+    font-weight: bold;
+    color: rgb(4, 37, 99);
+}
+.categoryitem{
+    display: none;
+}
+.categoryitem:nth-of-type(2){
+    display: block;
+}
+
+.form-items{ 
+    padding: 0% 0%;
+    margin-top: 1%;
+    
+  }
+form input[type=text]:hover
+{
+  border: 1px solid orangered;
+  
+}
+form .save button {
+    background-color:  orangered;
+    color: white;
+    padding: 8px 8px;
+    margin: 10px 1px;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+    border-radius: 1%;
+  }
+  form .manual{
+      margin:2%;
+  }
+  form .save button:hover {
+    background-color: rgb(26, 107, 228);
+    }
+
+
+
+
+
+
+
+
+
+
+/* for Responsive web page */
+@media only screen and (max-width: 600px) {
+
+    /* vertical navbar */
+
+    .vert-nav{
+        width: 28%;
+        padding-bottom: 6%;
+    }
+    .vert-nav .nav-head{
+        margin-top: 4%;
+        font-size: 100%;
+    }
+    .vert-nav .nav-head i{
+        display: none;
+    }
+    .vert-nav .icon img{
+        height: 3em;
+        width: 4em;
+    }
+    .vert-nav .nav-links{
+        margin-top: 10%;
+    }
+    .vert-nav .nav-links .list-items li{
+        margin-left: 8%;
+        margin-top: 20%;
+        margin-right: 0%;
+        font-size: 93%;
+        
+    }
+    .vert-nav .nav-links .list-items li:hover{
+        margin-left: 12%;
+    }
+    .vert-nav .nav-links .list-items li i{
+        display: none;
+    }
+    .vert-nav .copywrite{
+        font-size: 60%;
+    }
+
+    /* horizontal navbar */
+    .hori-nav{
+        margin-left: 35%;
+        margin-right: 0%;
+        width: 80%;
+    }
+    .hori-nav .notify{
+        margin-left: 5%;
+    }
+    .hori-nav p{
+        display: none;
+    }
+  
+    /* styling  inner-html of vertical links*/
+
+    .cath{
+        margin-top: 13%;
+        width: 62%;
+        overflow: hidden;
+        
+    }
+    .cath h2{
+        font-size: 110%;
+    }
+
+    /* dashboard */
+    .dashboard{
+        margin-left: 35%;
+    }
+    .dashboard img{
+        height: 5em;
+        width: 5em;
+        margin: 0% 4% 2% 35%;
+    }
+    .dashboard .about-admin
+    {
+        display: list-item;
+        list-style-type: none;
+    }
+    .dashboard .about-admin .social-media ul{
+        display: flex;
+    }
+    .about-admin{
+        margin-top: 1%;
+        padding-top: 1%;
+        margin-left: 0%;
+    }
+    .about-admin .personal-info,
+    .about-admin .contact-admin,
+    .about-admin .social-media{
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+    .about-admin .personal-info h1{
+        font-size: 100%;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    .about-admin .personal-info h3{
+        font-size: 100%;
+        margin-top: 5%;
+    }
+    .about-admin .contact-admin h3{
+        font-size: 100%;
+        margin-top: 8%;
+    }
+    .about-admin .contact-admin h4{
+        font-size: 85%;
+        margin-top: 10%;
+    }
+    .about-admin .social-media ul li{
+
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .about-admin .social-media .vert-line{
+        width: 60%;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    .about-admin .social-media .edit{
+        margin-top: 7%;
+        margin-left: 20%;
+        padding-bottom: 2%;
+    }
+    .about-admin .social-media .edit button{
+        font-size: 80%;
+    }
+ 
+    
+    /* styling preferences */
+ 
+    .preferences .preferences-blocks{
+        padding-top: 5%;
+        margin-left: 4%;
+        display: list-item;
+        list-style-type: none;
+    }
+    .preferences-blocks .pref{
+    
+        border-radius: 4px;
+        margin-right: 2%;
+        margin-top: 5%;
+        width: 12em;
+        height: 2em;
+        padding-top: 5%;
+        padding-right: 1%;
+        padding-left: 1%;
+        color: rgb(242, 248, 253);
+        font-weight: 100;
+    }
+ 
+    .preferences .edit{
+        margin-top: 5%;
+        margin-left: 4%;
+        font-size: 100%;
+        color: rgba(4, 37, 99, 0.87);
+        transition: 300ms;
+    }
+    .preferences .edit:hover{
+        margin-left: 6%;
+    }
+    
+
+    
+}

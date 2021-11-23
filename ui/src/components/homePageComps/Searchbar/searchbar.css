@@ -1,0 +1,45 @@
+/* .searchbar {
+	margin: 15% 20%;
+	margin-left: 30%;
+	display: flex;
+}
+.searchbar input {
+	height: 45px;
+	width: 360px;
+	border: none;
+	background-color: rgb(236, 236, 236);
+	border-radius: 2%;
+}
+.searchbar input:placeholder-shown {
+	font-size: 80%;
+	padding-left: 2.8%;
+	color: rgba(0, 0, 0, 0.473);
+}
+.searchbar button {
+	border-radius: 2%;
+	height: 45px;
+	width: 115px;
+	margin-left: 0%;
+	border: none;
+	font-size: 80%;
+	padding-left: 0%;
+	color: rgb(236, 236, 236);
+	background-color: orangered;
+}
+.searchbar button:hover {
+	background-color: rgb(26, 107, 228);
+} */
+
+@media only screen and (max-width: 600px) {
+	.searchbar {
+		margin: 15% 2% 15% 8%;
+	}
+	.searchbar input {
+		height: 40px;
+		width: 300px;
+	}
+	.searchbar button {
+		height: 40px;
+		width: 100px;
+	}
+}
