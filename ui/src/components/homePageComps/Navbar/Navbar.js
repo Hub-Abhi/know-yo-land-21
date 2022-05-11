@@ -17,6 +17,9 @@ const Navbar = () => {
 		navigate("/");
 		dispatch(logoutAction());
 	};
+	const handleClick = () => {
+		window.open("http://localhost:8000");
+	  };
 	const getFormattedName = () =>
 		`${userProfileData?.firstName?.[0]?.toUpperCase()}${userProfileData?.firstName?.slice(
 			1
@@ -60,6 +63,13 @@ const Navbar = () => {
 								Home <span className="sr-only">(current)</span>
 							</Link>
 						</li>
+						
+						//added for predict button
+						
+						<li className="nav-item active">
+							<a className="nav-link" href="http://localhost:8000"> Predict</a>
+						</li>
+						
 						<li className="nav-item active">
 							<Link className="nav-link" to="/admin">
 								Contact
