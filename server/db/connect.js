@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 
-mongoose.connect("mongodb+srv://Aarushi:Archit@256@cluster0.pjb8r.mongodb.net/majorProject?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://abhi:data@project@cluster0.mke0s.mongodb.net/project_data?retryWrites=true&w=majority",{
     useCreateIndex:true,
     useNewUrlParser:true,
     useUnifiedTopology:true
